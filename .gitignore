@@ -1,0 +1,7 @@
+*.bak
+*.tmp
+*.log
+*.autosave
+*.swp
+*.DS_Store
+Thumbs.db
