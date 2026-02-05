@@ -1,0 +1,104 @@
+[Format]      =  1
+[Precision]   =  1e-008
+[Frequency]   =  0
+[MinAngle]    =  30
+[DoSmartMesh] =  1
+[Depth]       =  1
+[LengthUnits] =  meters
+[ProblemType] =  axisymmetric
+[Coordinates] =  cartesian
+[Comment]     =  "1.5.2."
+[PointProps]   = 0
+[BdryProps]   = 3
+  <BeginBdry>
+    <BdryName> = "sides"
+    <BdryType> = 2
+    <vsr> = 0
+    <vsi> = 0
+    <qsr> = 0
+    <qsi> = 0
+    <c0r>  = 0
+    <c0i>  = 0
+    <c1r>  = 0
+    <c1i>  = 0
+  <EndBdry>
+  <BeginBdry>
+    <BdryName> = "top"
+    <BdryType> = 0
+    <vsr> = 0
+    <vsi> = 0
+    <qsr> = 0
+    <qsi> = 0
+    <c0r>  = 0
+    <c0i>  = 0
+    <c1r>  = 0
+    <c1i>  = 0
+  <EndBdry>
+  <BeginBdry>
+    <BdryName> = "bottom"
+    <BdryType> = 2
+    <vsr> = 1
+    <vsi> = 0
+    <qsr> = 1
+    <qsi> = 0
+    <c0r>  = 0
+    <c0i>  = 0
+    <c1r>  = 0
+    <c1i>  = 0
+  <EndBdry>
+[BlockProps]  = 2
+  <BeginBlock>
+    <BlockName> = "conductor"
+    <ox> = 1
+    <oy> = 1
+    <ex> = 1
+    <ey> = 1
+    <ltx> = 0
+    <lty> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "air"
+    <ox> = 0
+    <oy> = 0
+    <ex> = 1
+    <ey> = 1
+    <ltx> = 0
+    <lty> = 0
+  <EndBlock>
+[ConductorProps]  = 0
+[NumPoints] = 14
+0	0	0	0	0
+0.050000000000000003	0	0	0	0
+0	0.050000000000000003	0	0	0
+0.0050000000000000001	0.050000000000000003	0	0	0
+0.0050000000000000001	0.044999999999999998	0	0	0
+0.0050000000000000001	0.031	0	0	0
+0.0050000000000000001	0.0050000000000000001	0	0	0
+0.031	0.0050000000000000001	0	0	0
+0	-0.050000000000000003	0	0	0
+0.0050000000000000001	-0.050000000000000003	0	0	0
+0.0050000000000000001	-0.044999999999999998	0	0	0
+0.0050000000000000001	-0.031	0	0	0
+0.0050000000000000001	-0.0050000000000000001	0	0	0
+0.031	-0.0050000000000000001	0	0	0
+[NumSegments] = 14
+2	3	-1	2	0	0	0
+4	3	-1	1	0	0	0
+4	1	-1	1	0	0	0
+2	0	-1	1	0	0	0
+0	8	-1	1	0	0	0
+8	9	-1	3	0	0	0
+10	9	-1	1	0	0	0
+10	1	-1	1	0	0	0
+13	11	-1	1	0	0	0
+12	11	-1	1	0	0	0
+12	13	-1	1	0	0	0
+7	6	-1	1	0	0	0
+6	5	-1	1	0	0	0
+7	5	-1	1	0	0	0
+[NumArcSegments] = 0
+[NumHoles] = 2
+0.0124	0.0134	0
+0.0115	-0.0138	0
+[NumBlockLabels] = 1
+0.031300000000000001	-0.0012999999999999999	1	-1	0	0
